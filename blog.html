@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>BLOG - Kauai Property Solutions</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="header__logo logo">KPS</a>
+        <div class="header__navigation">
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                  <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                  <li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
+                  <li class="menu__item"><a href="news.html" class="menu__link">News</a></li>
+                  <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                  <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+                </ul>
+                <a href="#" class="actions-header__button">Login</a>
+              </nav>
+          </div>
+          <div class="header__actions actions-header">
+            <button type="button" class="menu__icon icon-menu"><span></span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <section class="page__main main main_blog main_pages">
+        <div class="main__container main__container_pages">
+          <h1 class="main__title">Property Care Blog</h1>
+          <div class="main__text main__text_pages">
+            Expert insights and tips for maintaining your Kauai property
+          </div>
+        </div>
+      </section>
+      <section class="blog-section">
+        <div class="blog-section__container">
+          <!-- Add search and filter controls -->
+          <div class="blog-controls">
+            <div class="blog-search">
+              <input type="search" id="blog-search" placeholder="Search articles..." class="blog-search__input">
+              <button type="button" class="blog-search__button" aria-label="Search">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 19L14.65 14.65M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z" stroke="#303a4d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="blog-filter">
+              <button class="filter-button active" data-category="all">All</button>
+              <button class="filter-button" data-category="maintenance">Maintenance</button>
+              <button class="filter-button" data-category="cleaning">Cleaning</button>
+              <button class="filter-button" data-category="security">Security</button>
+              <button class="filter-button" data-category="property-care">Property Care</button>
+              <button class="filter-button" data-category="technology">Technology</button>
+            </div>
+          </div>
+
+          <div class="swiper blog-swiper">
+            <div class="swiper-wrapper">
+              <!-- Article 1 -->
+              <div class="swiper-slide">
+                <div class="blog-item">
+                  <div class="blog-item__image">
+                    <img 
+                      src="low-res-placeholder.jpg"
+                      data-src="images/Home/Home-Service-1.png"
+                      loading="lazy"
+                      decoding="async"
+                      alt="Property Maintenance"
+                    >
+                  </div>
+                  <div class="blog-item__content">
+                    <div class="article-meta">
+                      <span class="blog-item__date">March 15, 2024</span>
+                      <span class="blog-item__category category-maintenance">Maintenance</span>
+                      <span class="article-meta__readtime">5 min read</span>
+                    </div>
+                    <h2 class="blog-item__title">Essential Property Maintenance Tips</h2>
+                    <p class="blog-item__excerpt">
+                      Learn how to protect and maintain your property in Kauai's unique tropical environment...
+                    </p>
+                    <div class="article-share">
+                      <button class="share-button" aria-label="Share on Facebook">
+                        <img src="images/icons/facebook.svg" alt="">
+                      </button>
+                      <button class="share-button" aria-label="Share on Twitter">
+                        <img src="images/icons/twitter.svg" alt="">
+                      </button>
+                      <button class="share-button" aria-label="Share on LinkedIn">
+                        <img src="images/icons/linkedin.svg" alt="">
+                      </button>
+                    </div>
+                    <a href="#" class="blog-item__link">Read Article</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Article 2 -->
+              <div class="swiper-slide">
+                <div class="blog-item">
+                  <div class="blog-item__image">
+                    <img src="images/Home/Home-Service-2.png" alt="Cleaning Guide">
+                  </div>
+                  <div class="blog-item__content">
+                    <div class="blog-item__meta">
+                      <span class="blog-item__date">March 12, 2024</span>
+                      <span class="blog-item__category">Cleaning</span>
+                    </div>
+                    <h2 class="blog-item__title">A Complete Guide to Eco-Friendly Property Cleaning</h2>
+                    <p class="blog-item__excerpt">
+                      Discover effective and environmentally conscious cleaning methods for your property...
+                    </p>
+                    <a href="#" class="blog-item__link">Read Article</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Article 3 -->
+              <div class="swiper-slide">
+                <div class="blog-item">
+                  <div class="blog-item__image">
+                    <img src="images/Home/Home-Service-3.png" alt="Property Care">
+                  </div>
+                  <div class="blog-item__content">
+                    <div class="blog-item__meta">
+                      <span class="blog-item__date">March 10, 2024</span>
+                      <span class="blog-item__category">Property Care</span>
+                    </div>
+                    <h2 class="blog-item__title">Preparing Your Property for Extended Absences</h2>
+                    <p class="blog-item__excerpt">
+                      Essential steps to ensure your property remains well-maintained while you're away...
+                    </p>
+                    <a href="#" class="blog-item__link">Read Article</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Article 4 -->
+              <div class="swiper-slide">
+                <div class="blog-item">
+                  <div class="blog-item__image">
+                    <img src="images/Services/Service-1.jpg" alt="Landscaping">
+                  </div>
+                  <div class="blog-item__content">
+                    <div class="blog-item__meta">
+                      <span class="blog-item__date">March 8, 2024</span>
+                      <span class="blog-item__category">Landscaping</span>
+                    </div>
+                    <h2 class="blog-item__title">Sustainable Landscaping Practices for Kauai Properties</h2>
+                    <p class="blog-item__excerpt">
+                      Expert tips on maintaining beautiful, eco-friendly landscapes in tropical climates...
+                    </p>
+                    <a href="#" class="blog-item__link">Read Article</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Article 5 -->
+              <div class="swiper-slide">
+                <div class="blog-item">
+                  <div class="blog-item__image">
+                    <img src="images/Services/Service-2.jpg" alt="Security">
+                  </div>
+                  <div class="blog-item__content">
+                    <div class="blog-item__meta">
+                      <span class="blog-item__date">March 6, 2024</span>
+                      <span class="blog-item__category">Security</span>
+                    </div>
+                    <h2 class="blog-item__title">Modern Security Solutions for Vacation Properties</h2>
+                    <p class="blog-item__excerpt">
+                      The latest technologies and practices to keep your property secure when you're away...
+                    </p>
+                    <a href="#" class="blog-item__link">Read Article</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Article 6 -->
+              <div class="swiper-slide">
+                <div class="blog-item">
+                  <div class="blog-item__image">
+                    <img src="images/Services/Service-3.jpg" alt="Maintenance">
+                  </div>
+                  <div class="blog-item__content">
+                    <div class="blog-item__meta">
+                      <span class="blog-item__date">March 4, 2024</span>
+                      <span class="blog-item__category">Maintenance</span>
+                    </div>
+                    <h2 class="blog-item__title">Preventive Maintenance Checklist for Property Owners</h2>
+                    <p class="blog-item__excerpt">
+                      A comprehensive guide to keeping your property in top condition year-round...
+                    </p>
+                    <a href="#" class="blog-item__link">Read Article</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Article 7 - Technology -->
+              <div class="swiper-slide">
+                <div class="blog-item">
+                  <div class="blog-item__image">
+                    <img src="images/Home/Home-Service-1.png" alt="Apple HomeKit">
+                  </div>
+                  <div class="blog-item__content">
+                    <div class="blog-item__meta">
+                      <span class="blog-item__date">March 2, 2024</span>
+                      <span class="blog-item__category category-technology">Technology</span>
+                    </div>
+                    <h2 class="blog-item__title">Apple HomeKit: Smart Home Management for Vacation Properties</h2>
+                    <p class="blog-item__excerpt">
+                      Discover how Apple HomeKit can transform your Kauai property into a smart, secure, and energy-efficient home...
+                    </p>
+                    <a href="#" class="blog-item__link">Read Article</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Article 8 - Technology -->
+              <div class="swiper-slide">
+                <div class="blog-item">
+                  <div class="blog-item__image">
+                    <img src="images/Home/Home-Service-2.png" alt="Matter Devices">
+                  </div>
+                  <div class="blog-item__content">
+                    <div class="blog-item__meta">
+                      <span class="blog-item__date">February 28, 2024</span>
+                      <span class="blog-item__category category-technology">Technology</span>
+                    </div>
+                    <h2 class="blog-item__title">Matter Devices: The Future of Interoperable Smart Home Technology</h2>
+                    <p class="blog-item__excerpt">
+                      Understanding the Matter standard and how it's revolutionizing smart home device compatibility...
+                    </p>
+                    <a href="#" class="blog-item__link">Read Article</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Article 9 - Technology -->
+              <div class="swiper-slide">
+                <div class="blog-item">
+                  <div class="blog-item__image">
+                    <img src="images/Home/Home-Service-3.png" alt="Sonos">
+                  </div>
+                  <div class="blog-item__content">
+                    <div class="blog-item__meta">
+                      <span class="blog-item__date">February 25, 2024</span>
+                      <span class="blog-item__category category-technology">Technology</span>
+                    </div>
+                    <h2 class="blog-item__title">Sonos: Premium Audio Solutions for Luxury Properties</h2>
+                    <p class="blog-item__excerpt">
+                      How Sonos systems can enhance your property's value and guest experience with whole-home audio...
+                    </p>
+                    <a href="#" class="blog-item__link">Read Article</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Article 10 - Technology -->
+              <div class="swiper-slide">
+                <div class="blog-item">
+                  <div class="blog-item__image">
+                    <img src="images/Services/Service-1.jpg" alt="Ubiquiti">
+                  </div>
+                  <div class="blog-item__content">
+                    <div class="blog-item__meta">
+                      <span class="blog-item__date">February 22, 2024</span>
+                      <span class="blog-item__category category-technology">Technology</span>
+                    </div>
+                    <h2 class="blog-item__title">Ubiquiti Networks: Professional WiFi Solutions for Large Properties</h2>
+                    <p class="blog-item__excerpt">
+                      Enterprise-grade networking solutions that provide reliable connectivity for multi-unit properties...
+                    </p>
+                    <a href="#" class="blog-item__link">Read Article</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Add newsletter section -->
+      <section class="newsletter">
+        <div class="newsletter__container">
+          <h2 class="newsletter__title">Stay Updated</h2>
+          <p class="newsletter__text">Subscribe to our newsletter for the latest property care tips and updates</p>
+          <form class="newsletter__form" id="newsletter-form">
+            <input type="email" placeholder="Enter your email" required class="newsletter__input">
+            <button type="submit" class="newsletter__button button">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="#" class="footer__policy">Privacy Policy – Terms & Conditions</a>
+        <a href="" class="footer__logo logo">KPS</a>
+        <div class="footer__copyright">Copyright © 2025 KPS – All Rights Reserved</div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Add skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Add scroll progress indicator -->
+  <div class="scroll-progress"></div>
+</body>
+
+</html> 
